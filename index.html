@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسةالمصطفى(ع) للطفل اليتيم</title>
+    <link rel="stylesheet" href="style3.css">
+      <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- menu and logo-->
+    <header>
+      <nav class="navbar"><img src="logo.png" class="logo">
+        
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">الصفحة الرئيسية</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#portfolio">نشاطاتنا</a></li>
+          <li><a href="#pictures ">معرض الصور</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#contact">اتصل بنا</a></li>
+          <li><a href="#donate"> تبرع</a></li>
+             <li><a href="#" onclick="openRegisterModal()">التسجيل</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+<!-- نافذة العرض الصغيرة لتسجيل الدخول -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLoginModal()">&times;</span>
+    <h2>تسجيل الدخول:</h2>
+    <label for="loginUsername">اسم المستخدم:</label>
+    <input type="text" id="loginUsername" name="loginUsername" required>
+
+    <label for="loginPassword">كلمة المرور:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+
+    <button onclick="login()">تسجيل الدخول</button>
+  </div>
+</div>
+
+<!-- نافذة العرض الصغيرة لتسجيل جديد -->
+<div class="modal" id="registerModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeRegisterModal()">&times;</span>
+    <h2>معلومات التسجيل:</h2>
+    <label for="username">اسم المستخدم:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">كلمة المرور:</label>
+    <input type="password" id="password" name="password" required>
+
+    <div>
+      <input type="checkbox" id="rememberMe">
+      <label for="rememberMe">تذكرني</label>
+    </div>
+
+    <a href="forgot_password.html">نسيت كلمة السر؟</a>
+
+    <button onclick="register()">تسجيل</button>
+  </div>
+</div>
+
+
+      
+    
+    <section class="homepage" id="home">
+      <div class="content">
+      
+        <div class="text">
+          <h1>مؤسسة المصطفى (ع)</h1>
+          <p>مؤسسة انسانية مستقلة <br>تاسست في عام 2005</br></p>
+      </div> 
+       <a href="#about"> من نحن </a>
+      <button class="btn-donate">تبرع 
+</button>
+     </div>
+    
+    
+        </section>
+
+
+
+
+    <section class="services" id="services">
+      <h2>خدماتنا</h2>
+      <p>ساهم معنا</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="1.png" alt="img">
+          <h3>اكفل يتيم</h3>
+          <p>اكفلني ولك اجري"</p>
+        </li>
+        <li class="card">
+          <img src="2.png" alt="img">
+          <h3>تصدق</h3>
+          <p>"الصدقة تطفئ الخطيئة كما تطفى الماء النار"</p>
+        </li>
+        <li class="card">
+          <img src="3.png" alt="img">
+          <h3>صدقة جارية</h3>
+          <p>"اكثروا من الصدقة فأن المؤمن يوم القيامة في ظل صدقتة"</p>
+        </li>
+        <li class="card">
+          <img src="4.png" alt="img">
+          <h3> تكليف و عبادات</h3>
+          <p>كل مايخض بسن التكليف ومايترتب علية من عبادات</p>
+        </li>
+        <li class="card">
+          <img src="5.png" alt="img">
+          <h3>حوزة نسوية</h3>
+          <p>التسجيل في الحوزة النسوية </p>
+        </li>
+        <li class="card">
+          <img src="6.png" alt="img">
+          <h3>اخرى</h3>
+          <p>فيما يتعلق بخدمات المؤسسة</p>
+        </li>
+      </ul>
+    </section>
+            
+            
+
+    <section class="portfolio" id="portfolio">
+      <h2>نشاطاتنا</h2>
+      <p></p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/camping-1.jpg" alt="img">
+          <h3>كفالة الايتام</h3>
+          <p>  بأيدهم يبنوا مجتمعنا وبأيدينا نبني مستقبلهم </p>
+        </li>
+        <li class="card">
+          <img src="" alt="img">
+          <h3>صوم وعبادات</h3>
+          <p></p>
+        </li>
+        <li class="card">
+          <img src="" alt="img">
+          <h3></h3>
+          <p></p>
+        </li>
+        <li class="card">
+          <img src="" alt="img">
+          <h3></h3>
+          <p></p>
+        </li>
+        <li class="card">
+          <img src="" alt="img">
+          <h3></h3>
+          <p></p>
+        </li>
+        <li class="card">
+          <img src="" alt="img">
+          <h3></h3>
+          <p></p>
+        </li>
+      </ul>
+    </section>
+
+            
+          
+            
+       
+<section class="#pictures" id ="#pictures">
+            <h2>معرض الصور </h2>
+            
+            <ul class="hoverbox">
+            <li><a href="111.jpg" target="blank"><img src="111.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="112.jpg"/><img src="112.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="113.jpg"/><img src="113.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="114.jpg"/><img src="114.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="115.jpg"/><img src="115.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="116.jpg"/><img src="116.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="117.jpg"/><img src="117.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="118.jpg"/><img src="118.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="119.jpg"/><img src="119.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="120.jpg"/><img src="120.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="121.jpg"/><img src="121.jpg"/ class="preview"></a></li>
+            <li><a href="#"><img src="122.jpg"/><img src="122.jpg"/ class="preview"></a></li>
+        </ul>
+            <button class="mobutton"> تصفح المزيد      
+  <svg fill="currentColor" viewBox="0 0 24 24" class="moicon">
+    <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+  </svg>
+</button>
+
+                               
+        </section>  
+            
+    <section class="about" id="about">
+      <h2>من نحن</h2>
+      <p>اكتشف المزيد عن المؤسسة</p>
+      <div class="row company-info">
+        <h3>متى تاسست واين </h3>
+        <p></p>
+      </div>
+      <div class="row mission-vision">
+        <h3>مهمتنا </h3>
+        <p>.</p>
+        <h3>رؤيتنا </h3>
+        <p>الحفاظ على الاوتار الاضعف في النسيج الاجتماعي وخاصة الايتام والمعوزيين والمطلقات والارامل وتوعية المجتمع باحتضانهم ورعايتهم على جميع المستويات</p>
+      </div>
+      <div class="row team">
+        <h3>اعضاء المؤسسة </h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+            
+            
+                 
+            <section class="contact" id="contact">
+      <h2>اتصل بنا</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i>المقر الكائن في النجف الاشرف-الحنانة-مجاور الصحابي الجليل كميل بن زياد</p>
+            <p><i class="fas fa-envelope"></i>batkareem123@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 07808468100</p>
+            <p><i class="fas fa-clock"></i> 8:00 AM - 6:00 PM : السبت-الاربعاء </p>
+        
+            <p><i class="fas fa-clock"></i>الخميس و الجمعة: مغلق</p>
+            <p><i class="fas fa-globe"></i> www..com</p>
+          </div>          
+        </div>
+        <div class="col form">
+          <form onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" id="name" placeholder="*الاسم" required>
+            <input type="email" id="email" placeholder="*عنوان البريد الالكتروني" required>
+            <input type="text" id="phone" placeholder="*رقم الهاتف" required>
+            <textarea  id="Message" placeholder="*الرسالة" required></textarea>
+            <button type="submit">ارسال </button>
+          </form>
+        </div>
+    
+  
+            <button>
+  <svg class="empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0H24V24H0z"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z"></path></svg>
+  <svg class="filled" height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
+  Like
+</button>
+            
+            <div class="rating">
+  <input value="5" name="rating" id="star5" type="radio">
+  <label for="star5"></label>
+  <input value="4" name="rating" id="star4" type="radio">
+  <label for="star4"></label>
+  <input value="3" name="rating" id="star3" type="radio">
+  <label for="star3"></label>
+  <input value="2" name="rating" id="star2" type="radio">
+  <label for="star2"></label>
+  <input value="1" name="rating" id="star1" type="radio">
+  <label for="star1"></label>
+</div>
+
+              </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © 2024 جميع الحقوق محفوظة لدى مؤسسة المصطفى</span>
+        <span><div class="social">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Almostafaltflaletem"target="_blank"><img src="fb(4).png" alt=""></a>
+            <a href="https://www.facebook.com/Almostafaltflaletem"target="_blank"><img src="fb (2).png" alt=""></a>
+            <a href="https://www.facebook.com/Almostafaltflaletem"target="_blank"><img src="fb (3).png" alt=""></a>
+            <a href="https://www.facebook.com/Almostafaltflaletem"target="_blank"><img src="fb (1).png" alt=""></a>
+          </div>
+        </div>
+      </span>
+        <span class="link">
+        
+            <a href="#Home">الصفحة الرئيسية </a>
+            <a href="#contact">تواصل معنا</a>
+        
+        </span>
+      </div>
+
+    </footer>
+    <script src="http://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
